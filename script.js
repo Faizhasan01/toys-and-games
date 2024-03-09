@@ -1,4 +1,4 @@
-const words = ["clown", "cone", "cookie", "rango", "rikshaw", "car", "apple", "fool"];
+const words = ["farmer","blue","pen","table","school","clown", "cone", "cookie", "rango", "rikshaw", "car", "apple", "fool"];
 let selectedWord = words[Math.floor(Math.random() * words.length)]; 
 let guessedWord = Array(selectedWord.length).fill('_');
 let incorrectGuesses = []; 
