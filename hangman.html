@@ -1,3 +1,4 @@
+
 <noscript>
   <h3>Sorry , your browser doesn't support javascript :(</h3>
 </noscript>
@@ -10,25 +11,6 @@
   <link rel="stylesheet" href="style.css">
 
   <title>Hangman Game</title>
-  <style>
-    h1 {
-      text-align: center;
-      color: rgb(224, 32, 250)
-    }
-
-    h2 {
-      color:aliceblue;
-      text-align: center;
-    }
-
-    h3 { 
-      color:aliceblue;
-      text-align: center;
-    }
-
-    button {
-      text-align: center;
-    }
   </style>
 </head>
 
@@ -37,19 +19,22 @@
   <hr>
   <h2>There are total 5 chance for incorrect guesses</h2>
 
-  <div id="wordContainer">_____</div>
+  <div id="wordContainer"></div>
 
   <h3>Incorrect Guesses: 
-    <span style="color:red" id="incorrectGuesses"></span>
+    <span style="color:red; font-size:25px;" id="incorrectGuesses"></span>
   </h3>
 
-  <p id="message"></p>
+  <p id="message">Please Enter a letter between a-z</p>
 
-  <div  class = "text-input">
+  <div  id = "text-input">
     <input  type="text" id="guessInput">
     <button type="button" class="button" onclick="checkGuess()">Guess</button>
   </div>
-
+  
+  <div id ="divRestart">
+    <button type="button"  id="resbutton" onclick="restart()">Play Again</button>
+  </div>
   <div id="remark"></div>
 
   <script src="script.js"></script>
