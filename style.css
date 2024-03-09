@@ -70,11 +70,9 @@ input {
 
 #remark {
     margin-top: 15px;
-    width: 100%; /* Set the width of your div */
-    height: 300px; /* Set the height of your div */
-    /* background-image: url('your-image-url.jpg');  */
-    background-size: contain; /* Ensure the entire background is visible */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent the background from repeating */
-
+    width: 100%;
+    height: 300px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
