@@ -20,10 +20,6 @@ function hintImage(){
     remarkImage.style.backgroundImage = `url('image/${selectedWord}.jpeg')`;
 }
 
-function disp(){
-    messageDisplay.style.display = "inline-block";
-}
-
 function displayWord() {
     wordContainer.textContent = guessedWord.join(' ');
 }
@@ -37,13 +33,14 @@ function checkGuess() {
 
     if (input.length !== 1 || !input.match(/[a-z]/)) {
         messageDisplay.textContent = 'Please enter a valid single letter!';
-        disp();
-        return;
     }
 
-    if (selectedWord.includes(input)) {
+    else if(selectedWord.includes(input)) {
         for (let i = 0; i < selectedWord.length; i++) {
             if (selectedWord[i] === input) {
+                if(guessedWord[i] === input){
+                    messageDisplay.textContent = 'You have already guessed that letter!';
+                }
                 guessedWord[i] = input;
             }
         }
@@ -51,7 +48,6 @@ function checkGuess() {
 
         if (!guessedWord.includes('_')) {
             messageDisplay.textContent = 'Congratulations! You won!';
-            disp();
             winImage();
         }
     } 
@@ -59,18 +55,16 @@ function checkGuess() {
         if (!incorrectGuesses.includes(input)) {
             incorrectGuesses.push(input);
             remainingAttempts--;
-
+            messageDisplay.textContent = 'Incorrect guess!! Try another letter!';
             displayIncorrectGuesses();
 
             if (remainingAttempts === 0) {
                 messageDisplay.textContent = `Game Over! The word was "${selectedWord}"`;
-                disp();
                 looseImage();
             }
         } 
         else {
-            messageDisplay.textContent = 'You already guessed that letter!';
-            disp();
+            messageDisplay.textContent = 'You have already guessed that letter!';
         }
     }
 
