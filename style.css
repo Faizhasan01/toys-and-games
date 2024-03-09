@@ -6,20 +6,28 @@ body {
 }
 
 h1 {
-    color: #61dafb;
+    color: rgb(224, 32, 250)
 }
 
 hr {
     border: 1px solid #61dafb;
 }
 
+h2 {
+    color:aliceblue;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
 h3 {
-    color: #61dafb;
+    color: #ff5555;
+    /* color:aliceblue; */
+    margin: 5px;
 }
 
 #wordContainer {
     font-size: 30px;
-    margin: 20px 0;
+    margin: 10px 0;
     color: #61dafb;
 }
 
@@ -29,24 +37,25 @@ h3 {
 }
 
 #message{
+    margin: 5px;
     font-size: 18px;
     color: #fff;
-    /* margin-top: 20px; */
     padding: 10px;
     border-radius: 5px;
     font-weight: bold;
     background-color: #8f61fb; 
-    display: none;
-    /* display: inline-block; */
+    /* display: none; */
+    display: inline-block;
 
 }
-.text-input {
-    margin-top: 20px;
+#text-input {
+    margin-top: 5px;
+    display: block;
 }
 
 input {
     border-radius: 0.5rem;
-    padding: 8px;
+    padding: 10px;
     margin-right: 10;
     font-size: 20px;
     background-color: #fff;
@@ -55,8 +64,7 @@ input {
 
 .button {
     border-radius: 0.5rem;
-    /* padding: 8px; */
-    padding: 8px 16px;
+    padding: 8px 15px;
     font-size: 16px;
     background-color: #6199fb;
     color: #fff;
@@ -68,11 +76,31 @@ input {
     background-color: #64cc4f;
 }
 
+#divRestart{
+    display: none;
+}
+
+#resbutton {
+    margin-top: 5px;
+    border-radius: 0.5rem;
+    padding: 12px 50px;
+    font-size: 20px;
+    background-color: #103370;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+#resbutton:hover {
+    background-color: #64cc4f;
+}
+
 #remark {
-    margin-top: 15px;
-    width: 100%;
-    height: 300px;
+    margin-top: 10px;
+    width: 100%; 
+    height: 300px; 
+    /* background-image: url();  */
     background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-position: center; 
+    background-repeat: no-repeat; 
+
 }
