@@ -1,0 +1,80 @@
+body {
+    text-align: center;
+    margin: 20px;
+    background: url(image/background.gif);
+    background-size: cover;
+}
+
+h1 {
+    color: #61dafb;
+}
+
+hr {
+    border: 1px solid #61dafb;
+}
+
+h3 {
+    color: #61dafb;
+}
+
+#wordContainer {
+    font-size: 30px;
+    margin: 20px 0;
+    color: #61dafb;
+}
+
+#incorrectGuesses {
+    font-weight: bold;
+    color: #ff5555;
+}
+
+#message{
+    font-size: 18px;
+    color: #fff;
+    /* margin-top: 20px; */
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #8f61fb; 
+    display: none;
+    /* display: inline-block; */
+
+}
+.text-input {
+    margin-top: 20px;
+}
+
+input {
+    border-radius: 0.5rem;
+    padding: 8px;
+    margin-right: 10;
+    font-size: 20px;
+    background-color: #fff;
+    color: #282c36;
+}
+
+.button {
+    border-radius: 0.5rem;
+    /* padding: 8px; */
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #6199fb;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.button:hover {
+    background-color: #64cc4f;
+}
+
+#remark {
+    margin-top: 15px;
+    width: 100%; /* Set the width of your div */
+    height: 300px; /* Set the height of your div */
+    /* background-image: url('your-image-url.jpg');  */
+    background-size: contain; /* Ensure the entire background is visible */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+
+}
