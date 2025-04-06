@@ -80,6 +80,28 @@ input {
     display: none;
 }
 
+.rainbow {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(12, 12, 12);
+    text-decoration: none;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1, #fbc2eb, #fad0c4, #ff9a9e);
+    background-size: 100%;
+    border: 2px solid rgba(52, 214, 214, 0.822);
+    border-radius: 10px;
+    text-align: center;
+    animation: gradient-animation 6s ease infinite;
+    box-shadow: 0 0 10px #ff9a9e, 0 0 20px #fad0c4, 0 0 30px #fbc2eb;
+}
+
+.rainbow:hover {
+    color: rgb(12, 12, 12);
+    background: linear-gradient(45deg, #a18cd1, #fbc2eb, #fad0c4, #ff9a9e);
+    box-shadow: 0 0 15px #a18cd1, 0 0 25px #fbc2eb, 0 0 35px #fad0c4;
+}
+
 #resbutton {
     margin-top: 5px;
     border-radius: 0.5rem;
